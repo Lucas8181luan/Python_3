@@ -3,7 +3,7 @@
 # * / // %
 # + -
 
-# UM PROGRAMA QUE LIA UM NÚMERO, E MOSTRE SEU DOBRO, TRIPLO E RAIZ QUADRADA
+# UM PROGRAMA QUE LEIA UM NÚMERO, E MOSTRE SEU DOBRO, TRIPLO E RAIZ QUADRADA
 
 # 1° Passo, Entrada do Número
 numero = int(input("Digite um Número = "))
