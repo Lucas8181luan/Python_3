@@ -3,7 +3,7 @@
 # * / // %
 # + -
 
-# COMO INFORMAR O TIPO PRIMITIVO DE QUALQUE COISA ESCRITA NO TECLADO 
+# COMO INFORMAR O TIPO PRIMITIVO DE QUAL QUE COISA ESCRITA NO TECLADO 
 
 # 1° Passo, Crie a Entrada do Usuario
 entrada = input("Digite Algo = ")
