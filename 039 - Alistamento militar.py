@@ -2,8 +2,6 @@ import datetime
 
 ano_de_nascimento = int(input("Ano de nascimento = "))
 
-genero = input("Seu sexo e MASCULINO (sim) ou (não) = ")
-
 atual = datetime.date.today().year
 
 soma_idade = atual - ano_de_nascimento
@@ -12,10 +10,7 @@ print("-=-" * 12)
 print("Quam nasceu em {} tem {} anos em {}.".format(ano_de_nascimento, soma_idade, atual))
 print("-=-" * 12)
 
-if genero == "não" or "nao" or "Não" or "NÃO":
-    print("alistamento para MULHERES não e obrigatório")
-    print("-=-" * 12)
-elif soma_idade == 18:
+if soma_idade == 18:
     print("Você tem que alistar IMEDIATAMENTE!")
 elif soma_idade < 18:
     faltam = 18 - soma_idade
