@@ -6,3 +6,4 @@ for n in palavras:
     for letra in n:
         if letra.upper() in "AÁÂEÉIOU":
             print(letra,end=" ")
+
