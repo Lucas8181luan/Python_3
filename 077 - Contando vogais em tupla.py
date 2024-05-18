@@ -2,7 +2,7 @@ palavras = ("APRENDER", "PROGRAMAR", "LINGUAGEM", "PYTHON", "CURSO", "GRATIS", "
 
 
 for n in palavras:
-    print(f"\nNa palavra {n} temos = ",end=" ")
+    print(f"\nNa palavra {n.upper()} temos = ",end=" ")
     for letra in n:
-        if letra.upper() in "AEIOU":
+        if letra.upper() in "AÁÂEÉIOU":
             print(letra,end=" ")
