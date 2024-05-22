@@ -14,7 +14,7 @@ while True:
 
     continuar =' '
     while continuar not in "SN":
-        continuar = str(input("Quer continuar = ")).strip().upper()[0]
+        continuar = str(input("Quer continuar [S/N] = ")).strip().upper()[0]
     
     if continuar == "S":
         valor = int(input("Digite um valor = "))
