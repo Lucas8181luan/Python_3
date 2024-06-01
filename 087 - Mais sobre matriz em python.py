@@ -24,7 +24,7 @@ for i in lista[1]:
 for i in lista[2]:
     n2 = i
     if i % 2 == 0:
-        par.append(i)
+        par.append(i)     
 
 print(f"A soma dos valores pares é = {sum(par)}")
 print(f"A soma dos valores da terceira coluna é = {n0 + n1 + n2}")
