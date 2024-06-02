@@ -15,11 +15,11 @@ print(f"========== SORTEANDO {jogos} JOGOS ==========")
 time.sleep(3)
 
 for i in range(jogos):
-    numeros = [random.randint(1, 60), random.randint(1, 60), random.randint(1, 60), random.randint(1, 60), random.randint(1, 60), random.randint(1, 60)]
+    numeros = [random.randint(1, 61), random.randint(1, 61), random.randint(1, 61), random.randint(1, 61), random.randint(1, 61), random.randint(1, 61)]
     lista.append(numeros[:])
     numeros.clear()
 
 for n in lista:
     cont += 1
-    print(f"Jogo {cont} = {n}")
+    print(f"Jogo {cont} = {sorted(n)}")
 print("============ < BOA SORTE! > ============")
