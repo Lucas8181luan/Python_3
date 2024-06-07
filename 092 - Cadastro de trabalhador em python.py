@@ -10,9 +10,8 @@ carteira = int(input("Carteira de Trabalho (0 não tem) = "))
 tb["Ctps"] = carteira
 if carteira == 0:
     print("=" * 40)
-    print(f''' - Nome tem valor = {tb["Nome"]}
- - Idade tem o valor = {tb["Idade"]}
- - Ctps tem o valor = {tb["Ctps"]}''')
+    for k, v in tb.items():
+        print(f" - {k} tem valor = {v}")
 if carteira > 0:
     tb["Contratação"] = int(input("Ano de Contratação = "))
     tb["Salário"] = float(input("Salário = R$"))
@@ -20,10 +19,6 @@ if carteira > 0:
     apst = ap - (ano_atual - tb["Contratação"])
     tb["Aposentadoria"] = apst
     print("=" * 40)
-    print(f''' - Nome tem valor = {tb["Nome"]}
- - Idade tem o valor = {tb["Idade"]}
- - Ctps tem o valor = {tb["Ctps"]}
- - Contratação tem o valor = {tb["Contratação"]}
- - Salário tem o valor = {tb["Salário"]}
- - Aposentadoria tem o valor = {tb["Aposentadoria"]}''')
+    for k, v in tb.items():
+        print(f" - {k} tem valor = {v}")
 print("="  * 40)
