@@ -5,11 +5,11 @@ cont = 0
 jogador = str(input("Nome do Jogador = "))
 futebol["nome"] = jogador
 partidas = int(input(f"Quantas partidas {jogador} jogou = "))
-for i in range(1, 6):
-    gol = int(input(f"  Quantos gols na partida {i} = "))
+for i in range(0, partidas):
+    gol = int(input(f"  Quantos gols na partida {i + 1} = "))
     soma_gol += gol
     gols.append(gol)
-futebol["gols"] = gols
+futebol["gols"] = gols[:]
 futebol["total"] = soma_gol
 print("=" * 40)
 print(futebol)
