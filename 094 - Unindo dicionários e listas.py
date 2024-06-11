@@ -64,4 +64,4 @@ for i in lista_pessoas:
         idades_acima.append(i)
         print(f"   Nome = {i["nome"]}; Sexo = {i["sexo"]}; idade = {i["idade"]}; ")
 
-print("<< ENCERRADO >>")
+print("<<< ENCERRADO >>>")
