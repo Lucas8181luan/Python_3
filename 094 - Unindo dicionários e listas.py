@@ -60,9 +60,8 @@ print()
 print("D) Lista das pessoas que estão acima da média:")
 
 for i in lista_pessoas:
-    idades = i["idade"]
-    if idades >= media_idade:
+    if i["idade"] >= media_idade:
         idades_acima.append(i)
-        print(f"   {idades_acima}")
+        print(f"   Nome = {i["nome"]}; Sexo = {i["sexo"]}; idade = {i["idade"]}; ")
 
 print("<< ENCERRADO >>")
