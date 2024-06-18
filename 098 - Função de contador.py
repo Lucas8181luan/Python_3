@@ -30,6 +30,8 @@ def cont_usuario():
     passo = int(input("Passo = "))
     print("=" * 40)
     passo_p = abs(passo)
+    if passo_p == 0:
+        passo_p = 1
     print(f"Contagem de {início} até {fim} de {passo_p} em {passo_p}")
     if início >= 0:
         for i in range(início + 1):
