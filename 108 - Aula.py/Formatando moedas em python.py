@@ -2,7 +2,7 @@ import Import_somar
 
 usuário = float(input("Digite o preço = R$"))
 
-usuárioR = Import_somar.numero_formatado(usuário)
+usuárioR = Import_somar.moeda(usuário)
 
 taxa = float(input("Taxa = "))
 
