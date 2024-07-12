@@ -1,4 +1,4 @@
-def numero_inteiro():
+def numero_inteiro_float():
     while True:
         try:
             usuario = int(input("Digite um Inteiro = "))
