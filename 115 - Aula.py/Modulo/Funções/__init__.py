@@ -1,4 +1,19 @@
+def criar_arquivo():
+    try:
+        import os
+        diretoria = "115 - Aula.py/Modulo/Pessoas"
+        nome = "Pessoas.csv"
+        caminho_completo = os.path.join(diretoria, nome)
+        with open(caminho_completo, "x") as arquivo:
+            arquivo.write("")
+        
+        print(f"O arquivo {nome} foi criado com sucesso.")
+    except FileExistsError:
+        return 
+
+
 def menu():
+    criar_arquivo()
     while True:
         # PARTE 1
         cont = 0
@@ -31,6 +46,12 @@ def menu():
             opção = f"Opção {usuario}"
             print(f"{opção:^40}")
             print("-" * 40)
+            if usuario == 1:
+                import pandas as pd
+                caminho_aqv = "115 - Aula.py/Modulo/Pessoas/Pessoas.csv"
+                df = pd.read_csv(caminho_aqv)
+                print(f"{df.to_string(index=False)}")
+
         elif usuario == 3:
             print("-" * 40)
             print("Saindo do sistema... Até logo!")

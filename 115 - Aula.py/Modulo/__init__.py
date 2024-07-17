@@ -1,1 +1,1 @@
-from Modulo import Funções
+from Modulo import *
