@@ -1,2 +1,2 @@
-from Modulo import Funções
-Funções.menu()
+from Modulo import Menu
+Menu.menu()
